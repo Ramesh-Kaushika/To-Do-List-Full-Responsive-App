@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootLogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="339.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.to_do_list.controller.LoginFormController">
+   <children>
+      <TextField fx:id="txtUserName" layoutX="35.0" layoutY="131.0" onKeyPressed="#txtUserNameOnKeyPressed" prefHeight="10.0" prefWidth="262.0" promptText="Use Name" />
+      <Text layoutX="86.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login To To-Do List" wrappingWidth="167.04345703125">
+         <font>
+            <Font name="Optima Bold" size="19.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="txtPassword" layoutX="35.0" layoutY="220.0" onAction="#txtPasswordOnAction" prefHeight="25.0" prefWidth="262.0" promptText="Enter Password" />
+      <Button layoutX="96.0" layoutY="296.0" mnemonicParsing="false" onAction="#btnLogin" prefHeight="25.0" prefWidth="147.0" style="-fx-background-color: #1e3799;" text="Login" textFill="WHITE" />
+      <Text layoutX="35.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name" />
+      <Text layoutX="36.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="58.21630859375" />
+      <Text fill="#e84393" layoutX="86.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Powered  by : Ramesh Production">
+         <font>
+            <Font name="Noto Sans Kannada ExtraLight" size="11.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblCreateNewAccount" layoutX="122.0" layoutY="330.0" onMouseClicked="#lblCreateAccountOnMouseClicked" style="-fx-underline: 1px;" text="Create New Account" textFill="#6c5ce7" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
